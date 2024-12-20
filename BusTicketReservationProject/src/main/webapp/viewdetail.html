@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View detail</title>
+<style type="text/css">
+.container {
+	font-size: 20px;
+	font-weight: bold;
+	flex-grow: inherit;
+}
+
+body {
+	background-image: url('img/bus.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	color: #000000;
+	text-align: center;
+	margin: 50px;
+}
+
+table {
+	size: 20%;
+	font-size: 18px;
+	padding: 50px;
+	background-color: rgba(240, 255, 255, 0.511);
+	margin-left: 100px;
+	width: 600px;
+	margin-top: 10%;
+}
+
+td {
+	padding: 10px;
+	padding-right: 10px;
+}
+
+input {
+	padding: 5px;
+}
+.submit {
+	background-color: red;
+	color: white;
+	border-radius: 20%;
+	box-shadow: #302e2e;
+	padding: 8px;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+<h1>VIEW DETAIL</h1>
+<form action="ViewPage" method="post">
+<table>
+<tr>
+<td>Booking ID :</td>
+<td><input type="text" name="bookingid" id="bookingid"></td>
+</tr>
+<td>Passanger Name :</td>
+<td><input type="text" name="name" id="name"></td>
+</tr>
+</tr>
+<td>
+<button><a href="index.html">home</a></button>
+</td>
+<td><input type="submit" name="submit" class="submit" id="submit"></td>
+</tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+<style>
+.container {
+	font-size: 20px;
+	font-weight: bold;
+	flex-grow: inherit;
+}
+
+body {
+	background-image: url('img/bus.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	color: #000000;
+	text-align: center;
+	margin: 50px;
+}
+
+table {
+	size: 20%;
+	font-size: 18px;
+	padding: 50px;
+	background-color: rgba(240, 255, 255, 0.511);
+	margin-left: 100px;
+	width: 600px;
+}
+
+td {
+	padding: 10px;
+	padding-right: 10px;
+}
+
+input {
+	padding: 5px;
+}
+.select{
+padding: 5px;
+width:175px;
+}
+
+.submit {
+	background-color: red;
+	color: white;
+	border-radius: 20%;
+	box-shadow: #302e2e;
+	padding: 8px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>BOOKING</h1>
+		<form action="BookingTicket" method="post">
+			<table>
+				<tr>
+					<th colspan="2" align="center">BOOKING</th>
+					</td>
+				</tr>
+				<tr>
+					<td>Passanger Name</td>
+					<td><input type="text" name="pass_name" id="pass_name"></td>
+				</tr>
+				<tr>
+					<td>From Destination</td>
+					<td><select id="from_dest" name="from_dest" class="select" required>
+							<option value="chennai">chennai</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>To Destination</td>
+					<td><select id="to_dest" name="to_dest" class="select" required>
+							<option value="kanchipuram">kanchipuram</option>
+							<option value="tiruvallur">tiruvallur</option>
+							<option value="villupuram">villupuram</option>
+							<option value="mahabalipuram">mahabalipuram</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Mobile Number</td>
+					<td><input type="text" name="mobile_no" id="mobile_no"></td>
+				</tr>
+				<tr>
+					<td>Date Of Travel</td>
+					<td><input type="date" name="date_of_travel" id="date_of_travel"></td>
+				</tr>
+				<tr>
+					<td><button>
+							<a href="index.html" style="text-decoration: none;">home</a>
+						</button></td>
+					<td><input type="submit" class="submit" value="Book"
+						id="submit"></td>
+				</tr>
+
+			</table>
+		</form>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cancel</title>
+<style type="text/css">
+.container {
+	font-size: 20px;
+	font-weight: bold;
+	flex-grow: inherit;
+}
+
+body {
+	background-image: url('img/bus.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	color: #000000;
+	text-align: center;
+	margin: 50px;
+}
+
+table {
+	margin-top: 7%;
+	size : 20%;
+	font-size: 18px;
+	padding: 50px;
+	background-color: rgba(240, 255, 255, 0.511);
+	margin-left: 100px;
+	width: 600px;
+	size: 20%;
+}
+
+td {
+	padding: 10px;
+	padding-right: 10px;
+}
+
+input {
+	padding: 5px;
+}
+
+.submit {
+	background-color: red;
+	color: white;
+	border-radius: 20%;
+	box-shadow: #302e2e;
+	padding: 8px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>CANCEL BOOKING</h1>
+		<form action="CancelTicket" method="post">
+			<table>
+				<tr>
+					<td><label>Booking Id : </label></td>
+					<td><input type="text" name="bookingid" id="bookingid">
+					<td>
+				</tr>
+				<tr>
+					<td><label>Passanger Name : </label></td>
+					<td><input type="text" name="name" id="name">
+					<td>
+				</tr>
+				<tr>
+					<td><label>Mobile Number : </label></td>
+					<td><input type="text" name="mobileno" id="mobileno">
+					<td>
+				</tr>
+				<tr>
+					<td><button>
+							<a href="index.html" style="text-decoration: none;">home</a>
+						</button></td>
+					<td><input type="submit" class="submit" name="submit"
+						id="submit" value="cancel"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
